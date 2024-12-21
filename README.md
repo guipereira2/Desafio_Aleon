@@ -15,6 +15,7 @@ cd DesafioAleon
 - Pandas
 - Matplotlib
 - Seaborn
+- Streamlit
 
 Certifique-se de ter um ambiente Python configurado para as dependências.
 
@@ -32,6 +33,11 @@ pip install -r requirements.txt
 python main.py
 ```
 
+### Execute o dashboard
+```bash
+streamlit run storytelling.py
+```
+
 ## Sobre 
 
 Esse projeto foi desenvolvido com a API da Food and Drug Administration(FDA) com o objetivo de fazer análise de dados de saúde explorando a relação entre medicamentos, relações adversas e outros fatores. 
@@ -43,3 +49,8 @@ O projeto inclui:
 - Tratamento e manipulações com os DataFrames
 - Criação de diversos gráficos como em barra, dispersão e setores
 - Análise dos gráficos e dados obtidos
+- Dashboard para storytelling incluindo contextualização, problemas e soluções
+
+## Prints do dashboard 
+
+
