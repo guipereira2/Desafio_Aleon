@@ -109,14 +109,14 @@ def projeto():
     st.markdown('- Criar gráficos, análises, tabelas, sobre os dados extraídos, utilizando bibliotecas python') #Tópicos objetivos
     st.header('API escolhida') #Subtítulo
     #Texto sobre API escolhida
-    st.write('Após realizar a leitura das APIs disponíveis, decidi optar pela API da Food and Drug Administration (FDA), pois tenh prévia em projetos de análise de dados e aprendizado de máquina com dados de saúde. Essa experiência me levou a escolher essa API, que se alinha com meu conhecimento. Após tomar a decisão de utilizar a API da FDA dediquei um tempo para ler o overview e a documentação, além disso li alguns exemplos disponíveis e realizei alguns testes de chamdas da API pelo navegador. A consulta é estruturada com a URL base da API e parâmetros específicos, como a busca, número de registros e limite, essa consulta tem a forma:')
+    st.write('Após realizar a leitura das APIs disponíveis, decidi optar pela API da Food and Drug Administration (FDA), pois tenho experiência prévia em projetos de análise de dados e aprendizado de máquina com dados de saúde. Essa experiência me levou a escolher essa API, que se alinha com meu conhecimento. Após tomar a decisão de utilizar a API da FDA dediquei um tempo para ler o overview e a documentação, além disso li alguns exemplos disponíveis e realizei alguns testes de chamdas da API pelo navegador. A consulta é estruturada com a URL base da API e parâmetros específicos, como a busca, número de registros e limite, essa consulta tem a forma:')
     #Trecho em bloco de código sobre API
     requisicao = 'https://api.fda.gov/drug/label.json(endpoint base)?search=campo:termo&limit=5(limite).'
     st.code(requisicao, language='python')
     st.header('Categorias Escolhidas') #Subtítulo sobre categorias da API
     #Tópicos com texto sobre as categorias escolhidas da API
     st.markdown('- What adverse reactions are frequently reported: Essa categoria me permite explorar quais medicamentos apresentam as condições adversas mais frequentemente registradas, o que pode fornecer insights sobre quais medicamentos ou substâncias estão associadas a efeitos colaterais comuns')
-    st.markdown('- Who reports adverse events: Com essa informação é possível identificar quais fontes estão mais frequentimente relatando os eventos adversos, permitindo uma possível correlação')
+    st.markdown('- Who reports adverse events: Com essa informação é possível identificar quais fontes estão mais frequentemente relatando os eventos adversos, permitindo uma possível correlação')
     st.markdown('- Adverse drug event reports by Country: Essa categoria permite a análise geográfica nas condições adversas em medicamentos')
     st.markdown('- Date that the report was first received by FDA: Essa categoria permite avaliar padrões de reporte ao longo do tempo e compreender mudanças e tendências')
     st.markdown('- The drug’s dosage form: Essa informação pode ser útil para correlacionar a forma de administração com o tipo de reação adversa')
