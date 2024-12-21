@@ -61,7 +61,6 @@ def barra(df, title, eixoX, eixoY, legenda):
     plt.title(title, fontsize=12, fontweight='bold')
     plt.show()
 
-
 #Função para gerar gráfico de setores
 def gerar_setores(df, title): 
     plt.pie(df['count'], labels=df['term'])
