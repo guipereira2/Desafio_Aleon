@@ -54,7 +54,7 @@ O projeto inclui:
 ## Prints do dashboard
 ### Primeira imagem
 ##
-![](prints/dashboard1.png)
+![](prints/dashboard1-2.png)
 ### Segunda imagem
 ##
 ![](prints/dashboard2.png)
