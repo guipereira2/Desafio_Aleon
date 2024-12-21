@@ -52,7 +52,7 @@ O projeto inclui:
 - Dashboard para storytelling incluindo contextualização, problemas e soluções
 
 ## Prints do dashboard 
-![](.prints/dashboard1.png)
-![](.prints/dashboard2.png)
-![](.prints/dashboard3.png) 
+![1](.prints/dashboard1.png)
+![2](.prints/dashboard2.png)
+![3](.prints/dashboard3.png) 
 
