@@ -109,7 +109,7 @@ def projeto():
     st.markdown('- Criar gráficos, análises, tabelas, sobre os dados extraídos, utilizando bibliotecas python') #Tópicos objetivos
     st.header('API escolhida') #Subtítulo
     #Texto sobre API escolhida
-    st.write('Após realizar a leitura das APIs disponíveis, decidi optar pela API da Food and Drug Administration (FDA), pois tenho experiência prévia em projetos de análise de dados e aprendizado de máquina com dados de saúde. Essa experiência me levou a escolher essa API, que se alinha com meu conhecimento. Após tomar a decisão de utilizar a API da FDA dediquei um tempo para ler o overview e a documentação, além disso li alguns exemplos disponíveis e realizei alguns testes de chamdas da API pelo navegador. A consulta é estruturada com a URL base da API e parâmetros específicos, como a busca, número de registros e limite, essa consulta tem a forma:')
+    st.write('Após realizar a leitura das APIs disponíveis, decidi optar pela API da Food and Drug Administration (FDA), pois tenho experiência prévia em projetos de análise de dados e aprendizado de máquina com dados de saúde. Essa experiência me levou a escolher essa API, que se alinha com meu conhecimento. Após tomar a decisão de utilizar a API da FDA dediquei um tempo para ler o overview e a documentação, além disso li alguns exemplos disponíveis e realizei alguns testes de chamadas da API pelo navegador. A consulta é estruturada com a URL base da API e parâmetros específicos, como a busca, número de registros e limite, essa consulta tem a forma:')
     #Trecho em bloco de código sobre API
     requisicao = 'https://api.fda.gov/drug/label.json(endpoint base)?search=campo:termo&limit=5(limite).'
     st.code(requisicao, language='python')
@@ -164,7 +164,7 @@ def dataframe():
 #Gerando DataFrames dos dados da API e os armazenando em um dicionário
 dados_api = dataframe()
 
-#Itera sbre o dicionário de dataframe e cria uma variável global para acesso 
+#Itera sobre o dicionário de dataframe e cria uma variável global para acesso 
 for nome, df in dados_api.items():
     if df is not None:
         globals()[f"df_{nome}"] = df
@@ -209,7 +209,7 @@ def barra(df, title, eixoX, eixoY, legenda):
     #Trecho em bloco de código sobre o terceiro erro
     st.code(codigo_terceiro_erro)
     #Texto em tópico do quarto erro
-    st.markdown('- O quarto erro que encontrei foi ao criar o dashboard e inserir os gráficos do matplotlib, percebi que o contraste estava atrapalhando a visualização dos dados. Para resolver isso, alterei os parâmetros do rc do Seaborn com o código HEX das cores do streamlit, para isso consultei a documentação do seaborn. Além disso tive uma dificuldade especifica ao tentar modificar o texto do gráfico de setores, após pesquisar, encontrei a solução utilizando o textprops. O código dessa parte ficou dessa forma:')
+    st.markdown('- O quarto erro que encontrei foi ao criar o dashboard e inserir os gráficos do matplotlib, percebi que o contraste estava atrapalhando a visualização dos dados. Para resolver isso, alterei os parâmetros do rc do Seaborn com o código HEX das cores do streamlit, para isso consultei a documentação do seaborn. Além disso tive uma dificuldade específica ao tentar modificar o texto do gráfico de setores, após pesquisar, encontrei a solução utilizando o textprops. O código dessa parte ficou dessa forma:')
     #Trecho de código da primeira parte do quarto erro
     codigo_quarto_erro1 = """
 sns.set(
