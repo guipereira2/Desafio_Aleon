@@ -283,7 +283,7 @@ def analises():
     #Gerando gráfico de dispersão para contagem de reportes de reações adversas ao longo dos anos
     gerar_scatter(df_recieve_date) 
     #Texto com análise
-    st.markdown('- Obersava-se que os relatos auemntaram de forma contínua desde 2004, alcançando seu pico em 2020, e depois começaram a diminuir. Essa comportamente provavelmente está relacionado à pandemia de COVID-19, que gerou um maior monitoramento e atenção aos efeitos adversos de medicamentos e vacinas')
+    st.markdown('- Observa-se que os relatos aumentaram de forma contínua desde 2004, alcançando seu pico em 2020, e depois começaram a diminuir. Essa comportamente provavelmente está relacionado à pandemia de COVID-19, que gerou um maior monitoramento e atenção aos efeitos adversos de medicamentos e vacinas')
     st.write('-----------------------------------------')#Quebra de linha
     st.header('Formas de dosagem que mais apresentam condições adversas')#Subtítulo com a quinta parte da análise
     #Gerando um gráfico de barra para formas de dosagem que mais apresentam condições adversas
