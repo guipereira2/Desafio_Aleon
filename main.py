@@ -81,7 +81,7 @@ def main():
     #Gerando DataFrames dos dados da API e os armazenando em um dicionário
     dados_api = dataframe()
 
-    #Itera sbre o dicionário de dataframe e cria uma variável global para acesso 
+    #Itera sobre o dicionário de dataframe e cria uma variável global para acesso 
     for nome, df in dados_api.items():
         if df is not None:
             globals()[f"df_{nome}"] = df

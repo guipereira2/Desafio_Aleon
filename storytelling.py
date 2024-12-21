@@ -123,7 +123,7 @@ def projeto():
     st.header('Dificuldades encontradas') #Subtítulo (parte das dificuldades encontradas)
     #Tópico sobre erros 
     #Texto em tópico do primeiro erro
-    st.markdown('- Durante a etapa inicial do código que faz as requisições das urls, inicialmente fiz a leitura individual de cada URL. No entanto, percebi que o código não estava otimizado, então reescrevi com outra abordagem. Após isso, encontrei dificuldades ao tentar acessar cada DataFrame individualmente, o que me levou a pesquisar sobre variáveis globais e como criá-las a partir de um dicionário. Meu pensamento para essa etapa foi de criar um dicionário contendo todas as urls , em seguida, desenvolver uma função responsável pela leitura dos dados com tratamento de erros. Após isso, implementei uma função para iterar pelas URls e transformar os dados em DataFrames. Por fim, após a dificuldade de acessar cada dataframe de forma individual e global criei uma função para iterar no dicionário de dataframes e criar uma varíavel para cada dataframe. O principal motivo que me levou a adotar essa abordagem foi que, caso novas URLs sejam adicionadas, o processo se torna mais simples e eficiente, o código dessa parte ficou dessa forma: ')
+    st.markdown('- Durante a etapa inicial do código que faz as requisições das urls, inicialmente fiz a leitura individual de cada URL. No entanto, percebi que o código não estava otimizado, então reescrevi com outra abordagem. Após isso, encontrei dificuldades ao tentar acessar cada DataFrame individualmente, o que me levou a pesquisar sobre variáveis globais e como criá-las a partir de um dicionário. Meu pensamento para essa etapa foi de criar um dicionário contendo todas as urls , em seguida, desenvolver uma função responsável pela leitura dos dados com tratamento de erros. Após isso, implementei uma função para iterar pelas URls e transformar os dados em DataFrames. Por fim, após a dificuldade de acessar cada dataframe de forma individual e global criei uma função para iterar no dicionário de dataframes e criar uma variável para cada dataframe. O principal motivo que me levou a adotar essa abordagem foi que, caso novas URLs sejam adicionadas, o processo se torna mais simples e eficiente, o código dessa parte ficou dessa forma: ')
     #Trecho de código do primeiro erro
     codigo_primeiro_erro = """
      #URLs escolhidas para análise: Food and Drug Administration (FDA)
@@ -175,7 +175,7 @@ for nome, df in dados_api.items():
     #Trecho em bloco de código sobre o primeiro erro
     st.code(codigo_primeiro_erro)
     #Texto em tópico do segundo erro
-    st.markdown('- O segundo erro que encontrei foi durante a criação do gráfico de setores, enfrentei dificuldades para renomear os valores da coluna que vieram codificados, provavelmente utilizando algum tipo de Enconder, com números de 1 a 5. Inicialmente, tentei usar o método rename da biblioteca Pandas, mas não tive sucesso. Em seguida, alterei o tipo dos dados para str mas não resolveu o problema. Após consultar a documentação do Pandas, descrobri o metódo map, que finalmente mudou os valores da coluna, o código dessa parte ficou dessa forma:')
+    st.markdown('- O segundo erro que encontrei foi durante a criação do gráfico de setores, enfrentei dificuldades para renomear os valores da coluna que vieram codificados, provavelmente utilizando algum tipo de Enconder, com números de 1 a 5. Inicialmente, tentei usar o método rename da biblioteca Pandas, mas não tive sucesso. Em seguida, alterei o tipo dos dados para str mas não resolveu o problema. Após consultar a documentação do Pandas, descobri o metódo map, que finalmente mudou os valores da coluna, o código dessa parte ficou dessa forma:')
     #Trecho de código do segundo erro
     codigo_segundo_erro = """
 #Transformaçao da coluna term para string 
@@ -289,7 +289,7 @@ def analises():
     #Gerando um gráfico de barra para formas de dosagem que mais apresentam condições adversas
     barra(df_drug_dosage_forms, 'Formas de dosagem que mais apresentam condições adversas', '', 'Contagem', 'Forma de dosagem')
     #Texto com análise
-    st.markdown('- O gráfico mostra que medicamentos na forma de tablet dominam o número de reportes de reações adversas, essa predominância pode ser explicada pela maior popularidade dos medicamentos em formato de compimido que são mais comumente receitados ou também pode indicar que esses medicamentos apresentam mais condições adversas. Vale ressaltar que, embora os tablets sejam mais populares, o número de reações adversas pode indicar uma maior propensão desses medicamentos a reações adversas')
+    st.markdown('- O gráfico mostra que medicamentos na forma de tablet dominam o número de reportes de reações adversas, essa predominância pode ser explicada pela maior popularidade dos medicamentos em formato de comprimido que são mais comumente receitados ou também pode indicar que esses medicamentos apresentam mais condições adversas. Vale ressaltar que, embora os tablets sejam mais populares, o número de reações adversas pode indicar uma maior propensão desses medicamentos a reações adversas')
 
 #Se a aba selecionada for a do projeto executa a função projeto
 if aba_selecionada == 'Projeto':
