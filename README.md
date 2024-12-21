@@ -54,11 +54,11 @@ O projeto inclui:
 ## Prints do dashboard
 ### Primeira imagem
 ##
-![](prints/dashboard1-2.png)
+![](prints/imagem1.png)
 ### Segunda imagem
 ##
-![](prints/dashboard2.png)
+![](prints/imagem2.png)
 ### Terceira imagem
 ##
-![](prints/dashboard3.png) 
+![](prints/imagem3.png) 
 
