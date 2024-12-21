@@ -95,7 +95,7 @@ def main():
     #Transformaçao da coluna term do DataFrame adverse_event_reporters para string 
     df_adverse_event_reporters['term'] = df_adverse_event_reporters['term'].astype(str)
 
-    #Conversão do nome das colunas term do DataFrane adverse_event_reporters
+    #Conversão do nome das colunas term do DataFrame adverse_event_reporters
     df_adverse_event_reporters['term'] = df_adverse_event_reporters['term'].map({
         "5": "Consumer or non-health professional",
         "1": "Physician",
