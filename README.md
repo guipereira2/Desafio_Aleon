@@ -51,8 +51,14 @@ O projeto inclui:
 - Análise dos gráficos e dados obtidos
 - Dashboard para storytelling incluindo contextualização, problemas e soluções
 
-## Prints do dashboard 
-![](.prints/dashboard1.png)
-![](.prints/dashboard2.png)
-![](.prints/dashboard3.png) 
+## Prints do dashboard
+### Primeira imagem
+##
+![](prints/dashboard1.png)
+### Segunda imagem
+##
+![](prints/dashboard2.png)
+### Terceira imagem
+##
+![](prints/dashboard3.png) 
 
