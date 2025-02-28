@@ -6,8 +6,8 @@ O projeto tem como objetivo extração de dados atráves de uma API, formatar os
 
 ### Clone o repositório
 ```bash 
-git clone https://github.com/guipereira2/DesafioAleon
-cd DesafioAleon
+git clone https://github.com/guipereira2/Extracao_e_analise_API_FDA
+cd Extracao_e_analise_API_FDA
 ```
 ### As dependências são: 
 
