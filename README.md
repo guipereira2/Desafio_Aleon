@@ -1,6 +1,6 @@
-# Desafio Técnico Aleon
+# Extração de dados da API da FDA (*Food and Drug Administration*) 
 
-O desafio tem como objetivo extração de dados atráves de uma API, formatar os dados em formato tabular com a utilização do Pandas e por fim criar gráficos, análises, tabelas, sobre os dados extraídos.
+O projeto tem como objetivo extração de dados atráves de uma API, formatar os dados em formato tabular com a utilização do Pandas e por fim criar gráficos, análises, tabelas, sobre os dados extraídos.
 
 ## Dependências e execução: 
 
@@ -40,7 +40,7 @@ streamlit run storytelling.py
 
 ## Sobre 
 
-Esse projeto foi desenvolvido com a API da Food and Drug Administration(FDA) com o objetivo de fazer análise de dados de saúde explorando a relação entre medicamentos, relações adversas e outros fatores. 
+Esse projeto foi desenvolvido com a API da *Food and Drug Administration (FDA)* com o objetivo de fazer análise de dados de saúde explorando a relação entre medicamentos, relações adversas e outros fatores. 
 O projeto inclui: 
 
 - Extração dos dados da API pública da FDA
