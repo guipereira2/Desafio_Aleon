@@ -102,14 +102,14 @@ def gerar_scatter(df):
     
 #Função principal da aba projeto
 def projeto(): 
-    st.title('Desafio Técnico Aleon') #Título principal
+    st.title('Extraindo e Analisando Dados com a API da FDA') #Título principal
     st.header('Objetivos') #Subtítulo (parte dos objetivos)
     st.markdown('- Escolher uma API para extração de dados') #Tópicos objetivos 
     st.markdown('- Formatar os dados da API de forma tabular utilizando Pandas') #Tópicos objetivos
     st.markdown('- Criar gráficos, análises, tabelas, sobre os dados extraídos, utilizando bibliotecas python') #Tópicos objetivos
     st.header('API escolhida') #Subtítulo
     #Texto sobre API escolhida
-    st.write('Após realizar a leitura das APIs disponíveis, decidi optar pela API da Food and Drug Administration (FDA), pois tenho experiência prévia em projetos de análise de dados e aprendizado de máquina com dados de saúde. Essa experiência me levou a escolher essa API, que se alinha com meu conhecimento. Após tomar a decisão de utilizar a API da FDA dediquei um tempo para ler o overview e a documentação, além disso li alguns exemplos disponíveis e realizei alguns testes de chamadas da API pelo navegador. A consulta é estruturada com a URL base da API e parâmetros específicos, como a busca, número de registros e limite, essa consulta tem a forma:')
+    st.write('A consulta é estruturada com a URL base da API e parâmetros específicos, como a busca, número de registros e limite, essa consulta tem a forma:')
     #Trecho em bloco de código sobre API
     requisicao = 'https://api.fda.gov/drug/label.json(endpoint base)?search=campo:termo&limit=5(limite).'
     st.code(requisicao, language='python')
